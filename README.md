@@ -43,7 +43,7 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
            - [x] Bloc filtre
               - [x] Bloc Titre
               - [x] 4 blocs bouton
-            - [x] Bloc information
+           - [x] Bloc information
       - [ ] **Section Hébergements**
           **Contient :**
            - [ ] Bloc Populaire
