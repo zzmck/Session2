@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <!--  VIEWPORT  Responsive sur la largeur d'ecran  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--  POLICE D ECRITURE : Raleway  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <!--  CDN ICONES DU SITE  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!--  CSS du site  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--  TITRE  -->
+    <title>Booky</title>
+</head>
+
+<body>
+    <!--      HEADER : LOGO et MENU     -->
+    <header>
+        <div><img src="./images/logo/Booki@3x.png" alt="Logo" /></div>
+        <nav>
+            <ul>
+                <li class="menu-selected">Hébergements</li>
+                <li class="menu-unselected">Activités</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--       SECTION RECHERCHE : TITRE / SOUS SITRE / FORMULAIRE   -->
+    <section id="section-recherche">
+        <article class="recherche">
+            <div>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            </div>
+            <div>
+                <p class="texte-xs">En plein centre ville ou en pleine nature</p>
+            </div>
+            <div id="form">
+                <form>
+                    <div id="icone"><i class="fas fa-map-marker-alt"></i></div>
+                    <div id="champ_recherche"><input class="texte" type="text" value="Marseille, France" /></div>
+                    <div id="buttom"><button class="beauty-buttom" type="button">Rechercher</button></div>
+                    <div id="iconemasque"><button class="styled" type="button"><i class="fas fa-search"></i></button></div>
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <!--         SECTION FILTRE : TITRE et 4 BOUTONS     -->
+    <section id="section-filtre">
+        <article id="filtre">
+            <div>
+                <h2>Filtres</h2>
+            </div>
+            <div>
+                <div class="boutton"><a href="#"><span class="boutton_icon"><i class="fas fa-money-bill-wave"></i></span><span class="boutton_text">Économique</span></a></div>
+                <div class="boutton"><a href="#"><span class="boutton_icon"><i class="fa fa-child"></i></span><span class="boutton_text">Familial</span></a></div>
+                <div class="boutton"><a href="#"><span class="boutton_icon"><i class="fa fa-heart"></i></span><span class="boutton_text">Romantique</span></a></div>
+                <div class="boutton"><a href="#"><span class="boutton_icon"><i class="fas fa-dog"></i></span><span class="boutton_text">Animaux autorisés</span></a></div>
+            </div>
+            </div>
+            <div>
+                <p class="filtre-information"><span id="filtre-information-icone"><i class="fas fa-info circle-icon"></i></span><span id="filtre-information-texte">Plus de 500 logements sont disponibles dans cette ville</span></p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
