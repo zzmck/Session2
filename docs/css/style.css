@@ -1,12 +1,7 @@
+/*  PAGE GENERAL */
+
 html {
     margin: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
 }
 
 body {
@@ -14,25 +9,55 @@ body {
     margin: 0;
 }
 
-#d1 {
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -100px;
+    background-color: white;
+}
+
+section#section-recherche {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+
+/****************HEADER****************/
+
+
+/*             Structure              */
+
+header div {
     display: flex;
     width: 100%;
     margin: 0;
+    margin-bottom: 5px;
 }
 
-#d1 img {
-    height: 50px;
-    margin: 30px;
-    margin-bottom: 10px;
-}
-
-#menu {
+nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-#menu ul {
+
+/*                Logo                */
+
+header div img {
+    height: 50px;
+    margin: 30px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+
+/*             Menu Nav              */
+
+nav ul {
     display: flex;
     padding: 0;
     margin: 0;
@@ -40,106 +65,196 @@ body {
     text-align: center;
 }
 
-#menu li {
+nav li {
     display: flex;
     list-style: none;
-    line-height: 80px;
-    width: 100px;
     justify-content: center;
+    cursor: pointer;
 }
 
-.menu-selected {
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    display: inline-block;
+    height: 80px;
+    width: 150px;
+    line-height: 80px;
+    color: black;
+}
+
+nav span:hover {
     border-top: 3px #0065FC solid;
     color: #0065FC;
 }
 
-#menu li:hover {
-    border-top: 3px #0065FC solid;
-    color: #0065FC;
+
+/*     HEADER Responsive Tablette     */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    header {
+        border-bottom: 1px #F2F2F2 solid;
+    }
+    nav span:hover {
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+    }
+    nav span {
+        height: 100px;
+        line-height: 100px;
+    }
 }
 
-.menu-unselected {
-    border-top: 3px #ffffff solid;
-    color: #000000;
+
+/*      HEADER Responsive Mobile      */
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header div img {
+        height: 50px;
+        margin: 0px auto;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    nav {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    ul li:nth-child(1) {
+        flex-basis: 50%;
+    }
+    ul li:nth-child(2) {
+        flex-basis: 50%;
+    }
+    nav li {
+        flex: auto;
+        margin: 0;
+        height: 65px;
+        text-align: center;
+        line-height: 20px;
+        justify-content: center;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+    nav span {
+        display: inline;
+        color: black;
+    }
+    .menu-hebergement {
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .menu-activites {
+        padding: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    nav li:hover span {
+        border-top: none;
+        color: #0065FC;
+    }
+    nav li:hover {
+        border-bottom: 3px #0065FC solid;
+    }
 }
 
-section#recherche {
-    display: flex;
+
+/**************RECHERCHE***************/
+
+
+/*             Structure              */
+
+article#recherche {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+article #form {
+    margin-bottom: 0px;
+    margin-top: 10px;
     flex-direction: row;
 }
 
-.recherche h1 {
+
+/*                Titre               */
+
+#recherche h1 {
     font-size: 19px;
     font-weight: bold;
     margin: 0;
 }
 
-.recherche {
-    margin: 10px;
-    margin-left: 30px;
-}
 
-p.texte-xs {
+/*              Sous titre            */
+
+#recherche p {
     font-size: small;
     margin: 0;
     margin-top: 8px;
 }
 
-#form {
-    margin-bottom: 30px;
-    margin-top: 10px;
-    flex-direction: row;
-}
 
-form {
+/*             Formulaire             */
+
+#recherche form {
     display: flex;
     flex-direction: row;
     justify-items: center;
 }
 
-#icone {
-    position: absolute;
+#recherche .icone {
     background-color: #F2F2F2;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+    color: #000000;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
 }
 
-#icone i {
-    border: 1;
-    padding-left: 16px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 10px;
+#recherche #champ-recherche {
+    display: inline-block;
 }
 
-#champ-recherche {
-    display: flex;
-}
-
-.texte {
-    margin-left: 40px;
-    margin-top: 0px;
-    height: 34px;
-    width: 200px;
-    padding-left: 10px;
-    border-width: 1px;
-    border-style: inset;
-    border-color: #F2F2F2;
-    font-size: medium;
+.recherche-form {
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    padding: 11px;
+    outline-color: #deebff;
+    color: black;
     font-weight: bold;
 }
 
-#buttom {
-    display: flex;
+#recherche-form-bouton {
+    display: inline-block;
 }
 
-.beauty-buttom {
+nav ul li span {
+    text-decoration-line: none;
+    width: 160px;
+    color: black;
+}
+
+.buttom {
     background-color: #0065FC;
     border: none;
     color: white;
-    padding: 0px 0px;
+    padding: 12px 0px;
     text-align: center;
-    margin: 0px -15px;
+    margin: 0px 0px;
     cursor: pointer;
     width: 100px;
     font-size: small;
@@ -148,97 +263,27 @@ form {
     border-top-right-radius: 15px;
 }
 
-#iconemasque {
-    visibility: hidden;
+.buttom:hover {
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+.rechercher-mobile {
+    display: none;
 }
 
 
-/*
-    .beauty-buttom:hover {
-        background-color: #7cb0ff;
-    }*/
+/*   RECHERCHE Responsive Tablette    */
 
-@media all and (min-width: 768px) and (max-width: 991px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    #menu li {
-        line-height: 100px;
-        width: 200px;
-    }
-    .recherche h1 {
-        font-size: 21px;
-    }
-}
+
+/*    RECHERCHE Responsive Mobile     */
 
 @media (max-width: 767px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .buttom {
+        display: none;
     }
-    #d1 img {
-        height: 50px;
-        margin: 0px auto;
-        padding-top: 15px;
-        padding-bottom: 0px;
-    }
-    #menu {
-        display: flex;
-    }
-    #menu ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-    #menu li {
-        flex: auto;
-        margin: 0;
-        text-align: center;
-        line-height: 35px;
-        justify-content: center;
-    }
-    #menu li:hover {
-        border-top: none;
-        border-bottom: 3px #0065FC solid;
-    }
-    .menu-selected {
-        border-top: none;
-        border-bottom: 3px #0065FC solid;
-        color: #0065FC;
-    }
-    .menu-unselected {
-        border-top: none;
-        border-bottom: 3px #F2F2F2 solid;
-        color: #000000;
-    }
-    .recherche {
-        margin: 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .recherche h1 {
-        font-weight: bolder;
-        font-size: 23px;
-    }
-    .texte {
-        width: 260px;
-    }
-    .beauty-buttom {
-        width: 40px;
-        color: #0065FC;
-    }
-    #iconemasque {
-        visibility: visible;
-    }
-    #buttom {
-        visibility: hidden;
-    }
-    .styled {
+    .rechercher-mobile {
+        display: inline-block;
         border: 0;
         padding: 11px 11px;
         margin-left: -30px;
@@ -247,7 +292,152 @@ form {
         border-radius: 10px;
         background-color: #0065FC;
     }
-    .styled:hover {
+    .rechercher-mobile:hover {
         background-color: #3888ff;
+    }
+    section#section-recherche {
+        padding-top: 60px;
+    }
+    #recherche h1 {
+        font-size: 24px;
+    }
+    #recherche p {
+        margin-top: 18px;
+        margin-bottom: 24px;
+        font-size: 17px;
+    }
+    .recherche-form {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+/****************FILTRE****************/
+
+#section-filtre {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0 25px 20px;
+}
+
+#filtre {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+#filtre div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+#filtre .titre {
+    margin-right: 12px;
+}
+
+.boutton {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-right: 18px;
+    padding-left: 0px;
+    height: 50px;
+    border-top: 2.5px solid #F2F2F2;
+    border-right: 2.5px solid #F2F2F2;
+    border-bottom: 2.5px solid #F2F2F2;
+    border-radius: 28px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#filtre .boutton_icon {
+    background-color: #deebff;
+    color: #005fcc;
+    border-radius: 50%;
+    width: 52px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+    display: inline-block;
+}
+
+.boutton_text {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 8px;
+    padding-left: 5px;
+    color: black;
+}
+
+.filtre-information {
+    display: flex;
+    margin-left: 12px;
+}
+
+.filtre-information-icone {
+    background-color: #deebff;
+    color: #005fcc;
+    border-radius: 50%;
+    width: 52px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+    display: inline-block;
+}
+
+#filtre-information-texte {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.circle-icon {
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 1px;
+    border: 2px solid #F2F2F2;
+}
+
+.fa-info {
+    color: #005fcc;
+}
+
+.boutton:hover {
+    background-color: #256efe;
+}
+
+.boutton:hover .boutton_text {
+    color: white;
+}
+
+
+/*             Structure              */
+
+
+/*     FILTRE Responsive Tablette     */
+
+
+/*      FILTRE Responsive Mobile      */
+
+@media (max-width: 767px) {
+    #filtre .titre {
+        font-size: 20px;
+    }
+    #filtre-information-texte {
+        margin-top: 0px;
     }
 }
