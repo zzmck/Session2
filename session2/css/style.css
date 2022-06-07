@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: "Raleway", sans-serif;
     margin: 0;
@@ -13,8 +17,8 @@ header {
 }
 
 main {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 
@@ -29,7 +33,7 @@ main {
 
 #logo img {
     height: 60px;
-    margin: 40px;
+    margin: 55px;
 }
 
 nav {
@@ -65,6 +69,94 @@ li span:hover {
     color: blue;
 }
 
+@media all and (min-width: 768px) and (max-width: 991px) {
+    header {
+        border-bottom: 1px #F2F2F2 solid;
+    }
+    nav span:hover {
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+    }
+    nav span {
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+
+/*      HEADER Responsive Mobile      */
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header div img {
+        height: 50px;
+        margin: 0px auto;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    main {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #logo {
+        justify-content: center;
+    }
+    #logo img {
+        margin-bottom: 30px;
+    }
+    nav {
+        display: flex;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    ul li:nth-child(1) {
+        flex-basis: 50%;
+    }
+    ul li:nth-child(2) {
+        flex-basis: 50%;
+    }
+    nav li {
+        flex: auto;
+        margin: 0;
+        height: 65px;
+        text-align: center;
+        line-height: 20px;
+        justify-content: center;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+    nav span {
+        display: block;
+        width: 100%;
+        line-height: 62px;
+        border-top: 3px solid white;
+        color: black;
+    }
+    nav a {
+        color: blue;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+    }
+    nav li:hover span {
+        border-top: none;
+        color: #0065FC;
+    }
+    nav li:hover {
+        border-bottom: 3px #0065FC solid;
+    }
+}
+
 
 /**************RECHERCHE***************/
 
@@ -78,13 +170,13 @@ li span:hover {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: lighter;
     margin: 0;
     margin-top: 30px;
@@ -106,22 +198,22 @@ form {
     color: #000000;
     border-top-left-radius: 25%;
     border-bottom-left-radius: 25%;
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .recherche-form {
     border: 1px solid #F2F2F2;
     background-color: white;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    width: 290px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 200px;
     outline-color: #deebff;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -129,13 +221,13 @@ form {
     background-color: #0065FC;
     border: none;
     color: white;
-    padding: 20px 0px;
+    padding: 10px 0px;
     text-align: center;
     margin: 0px 0px;
     cursor: pointer;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
     font-weight: bold;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -148,6 +240,50 @@ form {
 
 .buttom-mobile {
     display: none;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: lighter;
+        margin: 0;
+        margin-top: 30px;
+    }
+    form {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #style-recherche-mobile {
+        width: 100%;
+    }
+    .recherche-form {
+        width: 100%;
+    }
+    .buttom-bureau {
+        display: none;
+    }
+    .buttom-mobile {
+        display: block;
+        background-color: #0065FC;
+        color: white;
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 25%;
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 60px;
+        border-style: none;
+    }
+    .buttom-mobile:hover {
+        background-color: #deebff;
+        color: #0065FC;
+    }
 }
 
 
@@ -168,9 +304,9 @@ form {
 
 h3 {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    margin-right: 40px;
+    margin-right: 20px;
     padding-top: 30px;
 }
 
@@ -184,11 +320,11 @@ h3 {
 
 .boutton {
     align-items: center;
-    margin-top: 35px;
-    margin-right: 52px;
-    padding-right: 25px;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding-right: 20px;
     padding-left: 0px;
-    height: 70px;
+    height: 50px;
     border-top: 2.5px solid #F2F2F2;
     border-right: 2.5px solid #F2F2F2;
     border-bottom: 2.5px solid #F2F2F2;
@@ -201,21 +337,21 @@ h3 {
     display: inline-block;
     background-color: #deebff;
     color: #005fcc;
-    font-size: 28px;
+    font-size: 18px;
     border-radius: 50%;
-    width: 70px;
-    height: 71px;
+    width: 47px;
+    height: 47px;
     text-align: center;
-    line-height: 70px;
+    line-height: 45px;
 }
 
 .boutton_text {
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
-    margin-left: 8px;
-    padding-top: 20px;
-    padding-left: 15px;
+    margin-left: 4px;
+    padding-top: 8px;
+    padding-left: 5px;
     color: black;
 }
 
@@ -236,8 +372,8 @@ h3 {
     background-color: #deebff;
     color: #005fcc;
     border-radius: 50%;
-    width: 52px;
-    height: 51px;
+    width: 42px;
+    height: 41px;
     text-align: center;
     line-height: 51px;
     display: inline-block;
@@ -247,7 +383,7 @@ h3 {
     font-size: 20px;
     font-weight: lighter;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 8px;
 }
 
@@ -268,6 +404,35 @@ h3 {
     color: #005fcc;
 }
 
+@media (max-width: 767px) {
+    .boutton {
+        align-items: center;
+        margin-top: 20px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .boutton_icon {
+        font-size: 25px;
+        width: 56px;
+        height: 57px;
+        text-align: center;
+        line-height: 60px;
+    }
+    .boutton_text {
+        display: inline-block;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 8px;
+        padding-top: 0px;
+        padding-left: 15px;
+        color: black;
+    }
+    #filtre-information-texte {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+}
+
 
 /* Conteneur hébergement et aside */
 
@@ -282,13 +447,13 @@ h3 {
 #hebergements {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 68%;
     background-color: #F2F2F2;
     border-radius: 25px;
     margin-bottom: 40px;
     padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 aside {
@@ -298,7 +463,6 @@ aside {
     background-color: #F2F2F2;
     border-radius: 25px;
     margin-bottom: 40px;
-    min-width: fit-content;
 }
 
 #hebergements>section {
@@ -323,15 +487,18 @@ aside {
 #hebergements>section>article {
     margin-top: 20px;
     background-color: white;
-    height: 250px;
-    width: 300px;
+    height: fit-content;
+    padding-bottom: 10px;
+    width: 29%;
     border-radius: 25px;
 }
 
 #populaire>section>article {
-    width: 398px;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    height: fit-content;
+    padding-bottom: 10px;
     margin-bottom: 30px;
     border-radius: 25px;
     background-color: white;
@@ -360,13 +527,13 @@ article:hover .checked {
 }
 
 #hebergements>h3 #populaire>h3 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 .prix-hebergement,
 .prix-populaire {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: lighter;
     padding-top: 10px;
     margin: 0px;
@@ -378,7 +545,7 @@ article:hover .checked {
 .prix-hebergement>span,
 .prix-populaire>span,
 #hebergements>p>a {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: bold;
     padding-top: 10px;
     margin: 0px;
@@ -398,6 +565,7 @@ article:hover .checked {
     padding-top: 10px;
     margin: 0;
     margin-left: 20px;
+    font-size: 10px;
 }
 
 .checked {
@@ -415,7 +583,7 @@ article:hover .checked {
 /*formatage des images hebergements*/
 
 .hebergement-image {
-    width: 290px;
+    width: 96%;
     height: 130px;
     background-size: cover!important;
     background-position: center;
@@ -426,7 +594,7 @@ article:hover .checked {
 
 .populaire-image {
     width: 150px;
-    height: 175px;
+    height: 95%;
     background-size: cover!important;
     background-position: center;
     border-radius: 25px 0px 0px 25px;
@@ -445,6 +613,37 @@ article:hover .checked {
 #hebergements>p {
     margin-top: 50px;
     margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+    #conteneur {
+        flex-direction: column-reverse;
+    }
+    #hebergements {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    #hebergements>section {
+        align-items: center;
+        flex-direction: column;
+    }
+    #hebergements>section>article {
+        width: 90%;
+    }
+    #populaire>section>article {
+        width: 90%;
+    }
+    .hebergement-image {
+        width: 98%;
+        height: 130px;
+        background-size: cover!important;
+        background-position: center;
+        border-radius: 25px 25px 0px 0px;
+        margin: 5px;
+        background-attachment: local;
+    }
 }
 
 
@@ -471,12 +670,12 @@ article:hover .checked {
 .section-activites {
     display: flex;
     flex-direction: column;
+    width: 23%;
     justify-content: space-between;
-    width: 350px;
 }
 
 .section-activites>article {
-    height: fit-content;
+    height: auto;
     margin-left: 0px;
     width: 100%;
     border-radius: 25px;
@@ -517,7 +716,7 @@ article:hover .checked {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .background-size-simple-gauche-haut {
@@ -546,14 +745,56 @@ article:hover .checked {
 
 .background-size-double-premiere {
     background-position: 50% 0%;
-    background-size: 225%;
-    height: 450px;
+    background-size: 700px;
+    height: 430px;
     width: 100%;
 }
 
 .background-size-double-seconde {
     background-position: 53% 0%;
-    background-size: 225%;
-    height: 450px;
+    background-size: 700px;
+    height: 430px;
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    #contenue-activites {
+        flex-direction: column;
+    }
+    .section-activites {
+        width: 100%;
+    }
+    .section-activites>article {
+        margin-bottom: 20px;
+    }
+    .background-size-simple-gauche-haut {
+        background-position: 40% 45%;
+        height: 217px;
+        background-size: 100%;
+    }
+    .background-size-simple-gauche-bas {
+        background-position: 40% 24%;
+        height: 217px;
+        background-size: 100%;
+    }
+    .background-size-simple-droite-haut {
+        background-position: 40% 24%;
+        height: 217px;
+        background-size: 100%;
+    }
+    .background-size-simple-droite-bas {
+        background-position: 40% 29%;
+        height: 217px;
+        background-size: 100%;
+    }
+    .background-size-double-premiere {
+        background-position: 40% 24%;
+        height: 217px;
+        background-size: 100%;
+    }
+    .background-size-double-seconde {
+        background-position: 40% 24%;
+        height: 217px;
+        background-size: 100%;
+    }
 }
