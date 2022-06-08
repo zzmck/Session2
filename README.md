@@ -63,6 +63,32 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
            - [x] 3 blocks (lignes)
              - [x] Menu + Liste pour chaque bloc
                      
+                     
+
+
+### Rendu mobile :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_mobile.jpg"/>
+</p>
+
+### Rendu desktop :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_desktop.jpg"/>
+</p>
+
+### W3C Validator CSS :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/css_validator.jpg"/>
+</p>
+
+### W3C Validator HTML :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/html_validator.jpg"/>
+</p>
 
 **Merci de suivre mon projet**
 
