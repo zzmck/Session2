@@ -9,12 +9,13 @@
     <!--  POLICE D ECRITURE : Raleway  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--  CDN ICONES DU SITE  -->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> CDN ICONES DU SITE -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <!--  CSS du site  -->
+    <link rel="stylesheet" href="./css/raleway.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <!--  TITRE  -->
     <title>Booky</title>
 </head>
@@ -51,7 +52,7 @@
                     <!--FORMULAIRE-->
                     <form class="recherche-formulaire">
                         <div><i class="fas fa-map-marker-alt recherche-formulaire-icone"></i></div>
-                        <div id="recherche-formulaire-zonetexte"><input class="recherche-formulaire-zonetexte-champ" type="text" value="Marseille, France" /></div>
+                        <div class="recherche-formulaire-zonetexte"><input class="recherche-formulaire-zonetexte-champ" type="text" value="Marseille, France" /></div>
                         <div><button class="recherche-formulaire-bouton-bureau" type="button">Rechercher</button>
                             <button class="recherche-formulaire-bouton-mobile" type="submit"><i class="fas fa-search"></i></button></div>
                     </form>
@@ -100,88 +101,100 @@
                     <!-- LISTE HEBERGEMENTS -->
                     <div class="hebergement-section">
                         <div class="hebergement-section-carte">
-                            <div class="hebergement-section-carte-blochaut">
-                                <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');"></p>
-                            </div>
-                            <p class="hebergement-section-nomhebergement">Auberge La Cannebière</p>
-                            <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">25€</span></p>
-                            <p class="hebergement-section-etoiles">
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <div class="hebergement-section-carte-blochaut">
+                                    <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');"></p>
+                                </div>
+                                <p class="hebergement-section-nomhebergement">Auberge La Cannebière</p>
+                                <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">25€</span></p>
+                                <p class="hebergement-section-etoiles">
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                            </a>
                         </div>
                         <div class="hebergement-section-carte">
-                            <div class="hebergement-section-carte-blochaut">
-                                <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');"></p>
-                            </div>
-                            <p class="hebergement-section-nomhebergement">Hôtel du port</p>
-                            <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">52€</span></p>
-                            <p class="hebergement-section-etoiles">
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <div class="hebergement-section-carte-blochaut">
+                                    <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');"></p>
+                                </div>
+                                <p class="hebergement-section-nomhebergement">Hôtel du port</p>
+                                <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">52€</span></p>
+                                <p class="hebergement-section-etoiles">
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                            </a>
                         </div>
                         <div class="hebergement-section-carte">
-                            <div class="hebergement-section-carte-blochaut">
-                                <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');"></p>
-                            </div>
-                            <p class="hebergement-section-nomhebergement">Hôtel Les mouettes</p>
-                            <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">76€</span></p>
-                            <p class="hebergement-section-etoiles">
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <div class="hebergement-section-carte-blochaut">
+                                    <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');"></p>
+                                </div>
+                                <p class="hebergement-section-nomhebergement">Hôtel Les mouettes</p>
+                                <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">76€</span></p>
+                                <p class="hebergement-section-etoiles">
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                            </a>
                         </div>
                         <div class="hebergement-section-carte">
-                            <div class="hebergement-section-carte-blochaut">
-                                <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');"></p>
-                            </div>
-                            <p class="hebergement-section-nomhebergement">Hôtel de la mer</p>
-                            <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">46€</span></p>
-                            <p class="hebergement-section-etoiles">
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <div class="hebergement-section-carte-blochaut">
+                                    <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');"></p>
+                                </div>
+                                <p class="hebergement-section-nomhebergement">Hôtel de la mer</p>
+                                <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">46€</span></p>
+                                <p class="hebergement-section-etoiles">
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                            </a>
                         </div>
                         <div class="hebergement-section-carte">
-                            <div class="hebergement-section-carte-blochaut">
-                                <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');"></p>
-                            </div>
-                            <p class="hebergement-section-nomhebergement">Auberge Le Panier</p>
-                            <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">23€</span></p>
-                            <p class="hebergement-section-etoiles">
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <div class="hebergement-section-carte-blochaut">
+                                    <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');"></p>
+                                </div>
+                                <p class="hebergement-section-nomhebergement">Auberge Le Panier</p>
+                                <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">23€</span></p>
+                                <p class="hebergement-section-etoiles">
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                            </a>
                         </div>
                         <div class="hebergement-section-carte">
-                            <div class="hebergement-section-carte-blochaut">
-                                <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');"></p>
-                            </div>
-                            <p class="hebergement-section-nomhebergement">Hôtel chez Amina</p>
-                            <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">96€</span></p>
-                            <p class="hebergement-section-etoiles">
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <div class="hebergement-section-carte-blochaut">
+                                    <p class="hebergement-section-carte-blochaut-image" style="background-image: url('./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');"></p>
+                                </div>
+                                <p class="hebergement-section-nomhebergement">Hôtel chez Amina</p>
+                                <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">96€</span></p>
+                                <p class="hebergement-section-etoiles">
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star hebergement-section-etoile-selectionnee"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <!-- AFFICHER PLUS -->
@@ -200,60 +213,66 @@
                     <div class="populaire-section">
                         <!-- LOGEMENT HAUT -->
                         <div class="populaire-section-carte">
-                            <div class="populaire-section-carte-block-gauche">
-                                <p class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" style="background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');"></p>
-                            </div>
-                            <div class="populaire-section-carte-block-droit">
-                                <div class="populaire-section-carte-block-droit-texte">
-                                    <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Le soleil du matin</p>
-                                    <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">128€</span></p>
+                            <a href="#">
+                                <div class="populaire-section-carte-block-gauche">
+                                    <p class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" style="background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');"></p>
                                 </div>
-                                <p class="populaire-section-carte-block-droit-etoiles">
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                </p>
-                            </div>
+                                <div class="populaire-section-carte-block-droit">
+                                    <div class="populaire-section-carte-block-droit-texte">
+                                        <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Le soleil du matin</p>
+                                        <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">128€</span></p>
+                                    </div>
+                                    <p class="populaire-section-carte-block-droit-etoiles">
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                         <!-- LOGEMENT MILIEU -->
                         <div class="populaire-section-carte">
-                            <div class="populaire-section-carte-block-gauche">
-                                <p class="populaire-section-carte-block-gauche-image populaire-taille-image-milieu" style="background-image: url('./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');"></p>
-                            </div>
-                            <div class="populaire-section-carte-block-droit">
-                                <div class="populaire-section-carte-block-droit-texte">
-                                    <p class="populaire-section-carte-block-droit-texte-nom">Au coeur de l'eau Chambres d'hôtes</p>
-                                    <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">71€</span></p>
+                            <a href="#">
+                                <div class="populaire-section-carte-block-gauche">
+                                    <p class="populaire-section-carte-block-gauche-image populaire-taille-image-milieu" style="background-image: url('./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');"></p>
                                 </div>
-                                <p class="populaire-section-carte-block-droit-etoiles">
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star"></i>
-                                </p>
-                            </div>
+                                <div class="populaire-section-carte-block-droit">
+                                    <div class="populaire-section-carte-block-droit-texte">
+                                        <p class="populaire-section-carte-block-droit-texte-nom">Au coeur de l'eau Chambres d'hôtes</p>
+                                        <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">71€</span></p>
+                                    </div>
+                                    <p class="populaire-section-carte-block-droit-etoiles">
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star"></i>
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                         <!-- LOGEMENT BAS -->
                         <div class="populaire-section-carte">
-                            <div class="populaire-section-carte-block-gauche">
-                                <p class="populaire-section-carte-block-gauche-image populaire-taille-image-bas" style="background-image: url('./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');"></p>
-                            </div>
-                            <div class="populaire-section-carte-block-droit">
-                                <div class="populaire-section-carte-block-droit-texte">
-                                    <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Tout bleu et Blanc</p>
-                                    <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">68€</span></p>
+                            <a href="#">
+                                <div class="populaire-section-carte-block-gauche">
+                                    <p class="populaire-section-carte-block-gauche-image populaire-taille-image-bas" style="background-image: url('./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');"></p>
                                 </div>
-                                <p class="populaire-section-carte-block-droit-etoiles">
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
-                                    <i class="fa fa-star"></i>
-                                </p>
-                            </div>
+                                <div class="populaire-section-carte-block-droit">
+                                    <div class="populaire-section-carte-block-droit-texte">
+                                        <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Tout bleu et Blanc</p>
+                                        <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">68€</span></p>
+                                    </div>
+                                    <p class="populaire-section-carte-block-droit-etoiles">
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star populaire-section-carte-block-droit-etoiles-selectionnee"></i>
+                                        <i class="fa fa-star"></i>
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </aside>
@@ -357,5 +376,7 @@
         <!-- FIN FOOTER -->
     </div>
 </body>
+
+</html>
 
 </html>
