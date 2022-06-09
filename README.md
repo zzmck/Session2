@@ -4,6 +4,7 @@
 
 
 ## Vue des objectifs version bureau et mobile
+
 ### Version Bureau :
 
 <p align="center">
@@ -65,6 +66,8 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
                      
                      
 
+### Test sur Girhub en ligne :
+https://zzmck.github.io/Session2
 
 ### Rendu mobile :
 
