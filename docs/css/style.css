@@ -1,3 +1,7 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
 head {
     margin: 0;
 }
@@ -18,7 +22,6 @@ main {
 
 * {
     box-sizing: border-box;
-    font-family: Raleway;
 }
 
 
@@ -656,11 +659,15 @@ main {
     font-size: 14px;
 }
 
+.activites-conteneur-section-carte:hover .activites-conteneur-section-carte-texte {
+    color: #0065FC;
+}
+
 
 /****************FOOTER****************/
 
 .findepage {
-    height: 100%;
+    height: max-content;
     width: 100%;
     background-color: #f2f2f2;
 }
@@ -703,15 +710,11 @@ main {
     margin-top: 10px;
 }
 
-.findepage-section-laisons-liste:hover {
-    color: #0065FC;
-}
-
 .findepage-section-laisons-liste-lien {
     text-decoration: none;
     color: black;
 }
 
-.findepage-section-laisons-liste:hover {
+.findepage-section-laisons-liste-lien:hover {
     color: #0065FC;
 }
