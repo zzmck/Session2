@@ -9,19 +9,19 @@
         justify-content: space-around;
     }
     header {
-        width: 1440px;
+        width: 1400px;
     }
     .recherche {
-        width: 1440px;
+        width: 1400px;
     }
     .filtre {
         width: 1440px;
     }
     .conteneur {
-        width: 1440px;
+        width: 1400px;
     }
     .activites {
-        width: 1440px;
+        width: 1400px;
     }
 }
 
