@@ -4,6 +4,7 @@
 
 
 ## Vue des objectifs version bureau et mobile
+
 ### Version Bureau :
 
 <p align="center">
@@ -44,25 +45,53 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
               - [x] Bloc Titre
               - [x] 4 blocs bouton
            - [x] Bloc information
-      - [ ] **Section Hébergements**
+      - [x] **Section Hébergements**
           **Contient :**
-           - [ ] Bloc Populaire
-              - [ ] 3 blocks (Colonne)
-           - [ ] Bloc Hebergement
-             - [ ] 3 blocks (ligne)
-             - [ ] 2 block (colonne) / block  
-      - [ ] **Section Activités**
+           - [x] Bloc Populaire
+              - [x] 3 blocks (Colonne)
+           - [x] Bloc Hebergement
+             - [x] 3 blocks (ligne)
+             - [x] 2 block (colonne) / block  
+      - [x] **Section Activités**
              **Contient :**
-           - [ ] 4 blocks (ligne)
-             - [ ] 1 bloc 1 images + desc  
-             - [ ] 1 bloc 2 images + desc  
-             - [ ] 1 bloc 1 images + desc  
-             - [ ] 1 bloc 2 images + desc  
-      - [ ] **Footer**
+           - [x] 4 blocks (ligne)
+             - [x] 1 bloc 1 images + desc  
+             - [x] 1 bloc 2 images + desc  
+             - [x] 1 bloc 1 images + desc  
+             - [x] 1 bloc 2 images + desc  
+      - [x] **Footer**
           **Contient :**
-           - [ ] 3 blocks (lignes)
-             - [ ] Menu + Liste pour chaque bloc
+           - [x] 3 blocks (lignes)
+             - [x] Menu + Liste pour chaque bloc
                      
+                     
+
+### Test sur Girhub en ligne :
+https://zzmck.github.io/Session2
+
+### Rendu mobile :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_mobile.jpg"/>
+</p>
+
+### Rendu desktop :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_desktop.jpg"/>
+</p>
+
+### W3C Validator CSS :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/css_validator.jpg"/>
+</p>
+
+### W3C Validator HTML :
+
+<p align="center">
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/html_validator.jpg"/>
+</p>
 
 **Merci de suivre mon projet**
 
