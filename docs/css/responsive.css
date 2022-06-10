@@ -1,3 +1,31 @@
+/*General ordinateur sup à 1200px*/
+
+@media all and (min-width: 1440px) {
+    html {
+        height: 100%;
+    }
+    body {
+        display: flex;
+        justify-content: space-around;
+    }
+    header {
+        width: 1440px;
+    }
+    .recherche {
+        width: 1440px;
+    }
+    .filtre {
+        width: 1440px;
+    }
+    .conteneur {
+        width: 1440px;
+    }
+    .activites {
+        width: 1440px;
+    }
+}
+
+
 /*            VUE TABLETTE HEADER                */
 
 @media all and (min-width: 768px) and (max-width: 992px) {}
@@ -99,7 +127,7 @@
         font-size: 20px;
     }
     .recherche-formulaire-zonetexte-champ {
-        width: 110%;
+        width: 106%;
         font-size: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -359,7 +387,7 @@
         font-size: 11px;
     }
     .populaire-section-carte-block-gauche {
-        width: 46%;
+        width: max-content;
         height: 135px;
     }
     .populaire-section-carte-block-gauche-image {
@@ -371,6 +399,7 @@
         font-weight: bold;
         padding-top: 10px;
         margin: 0px;
+        margin-right: 10px;
     }
     .populaire-taille-image-haut {
         background-size: 211px;
@@ -414,14 +443,14 @@
     }
     .activites-conteneur-section-carte-simple-premiere {
         background-position: 50% 40%;
-        background-size: 560px;
+        background-size: 590px;
     }
     .activites-conteneur-section-carte-simple-seconde {
-        background-size: 571px;
+        background-size: 600px;
     }
     .activites-conteneur-section-carte-double-gauche-haut {
         background-position: 56% 52%;
-        background-size: 420px;
+        background-size: 430px;
         height: 150px;
     }
     .activites-conteneur-section-carte-double-gauche-bas {
