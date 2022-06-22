@@ -120,11 +120,11 @@ main {
 .recherche-formulaire-zonetexte-champ {
     border: 1px solid #F2F2F2;
     background-color: white;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 16px;
     width: 200px;
-    outline-color: #deebff;
+    outline: beige;
     color: black;
     font-size: 16px;
     font-weight: bold;
@@ -398,33 +398,13 @@ main {
     font-size: 14px;
 }
 
-.etoile-bleu {
+.etoile {
     color: #0065FC;
 }
 
-.hebergement-section-carte:hover .etoile-selectionnee-un {
+.hebergement-section-carte:hover .etoile {
     color: rgba(255, 208, 0, 0.949);
     transition: 0.2s;
-}
-
-.hebergement-section-carte:hover .etoile-selectionnee-deux {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 0.4s;
-}
-
-.hebergement-section-carte:hover .etoile-selectionnee-trois {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 0.6s;
-}
-
-.hebergement-section-carte:hover .etoile-selectionnee-quatre {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 0.8s;
-}
-
-.hebergement-section-carte:hover .etoile-selectionnee-cinq {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 1s;
 }
 
 .hebergements-afficherplus-lien {
@@ -551,29 +531,9 @@ main {
     font-size: 14px;
 }
 
-.populaire-section-carte:hover .etoile-selectionnee-un {
+.populaire-section-carte:hover .etoile {
     color: rgba(255, 208, 0, 0.949);
     transition: 0.2s;
-}
-
-.populaire-section-carte:hover .etoile-selectionnee-deux {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 0.4s;
-}
-
-.populaire-section-carte:hover .etoile-selectionnee-trois {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 0.6s;
-}
-
-.populaire-section-carte:hover .etoile-selectionnee-quatre {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 0.8s;
-}
-
-.populaire-section-carte:hover .etoile-selectionnee-cinq {
-    color: rgba(255, 208, 0, 0.949);
-    transition: 1s;
 }
 
 
