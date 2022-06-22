@@ -11,7 +11,11 @@
 
 /*            VUE TABLETTE HEADER                */
 
-@media all and (min-width: 768px) and (max-width: 992px) {}
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .header-menu-block-liste-texte:hover {
+        transition: none;
+    }
+}
 
 
 /*            VUE MOBILE HEADER                 */
@@ -80,6 +84,9 @@
         border-top: none;
         color: #0065FC;
     }
+    .header-menu-block-liste-texte:hover {
+        transition: none;
+    }
 }
 
 
@@ -111,7 +118,7 @@
         font-size: 20px;
     }
     .recherche-formulaire-zonetexte-champ {
-        width: 106%;
+        width: 102%;
         font-size: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -121,6 +128,9 @@
     }
     .recherche-formulaire-bouton-mobile {
         display: block;
+    }
+    .recherche-formulaire-bouton-mobile:hover {
+        transition: none;
     }
 }
 
@@ -155,7 +165,7 @@
         font-size: 20px;
     }
     .recherche-formulaire-zonetexte-champ {
-        width: 110%;
+        width: 105%;
         font-size: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -167,12 +177,22 @@
     .recherche-formulaire-bouton-mobile {
         display: block;
     }
+    .recherche-formulaire-bouton-mobile:hover {
+        transition: none;
+    }
 }
 
 
 /*            VUE FILTRE TABLETTE                */
 
-@media all and (min-width: 768px) and (max-width: 1100px) {}
+@media all and (min-width: 768px) and (max-width: 1100px) {
+    .filtre-container-ligne-bouton:hover {
+        transition: none;
+    }
+    .filtre-container-ligne-bouton:hover .filtre-container-ligne-bouton-texte {
+        transition: none;
+    }
+}
 
 
 /*           VUE FILTRE MOBILE            */
@@ -203,7 +223,10 @@
         margin-right: 0px;
     }
     .filtre-container-ligne-bouton:hover {
-        transition: 0s;
+        transition: none;
+    }
+    .filtre-container-ligne-bouton:hover .filtre-container-ligne-bouton-texte {
+        transition: none;
     }
     .filtre-container-ligne-bouton-icone {
         font-size: 19px;
@@ -252,6 +275,13 @@
     .hebergement-section-carte:hover {
         width: 45%;
         box-shadow: inset 0 0 1px #b0b0b0, 0 0 7px#999999;
+        transition: none;
+    }
+    .hebergement-section-carte:hover .hebergement-section-nomhebergement {
+        transition: none;
+    }
+    .hebergement-section-carte:hover .etoile {
+        transition: none;
     }
     .hebergement-section-carte-blochaut-image {
         height: 118px;
@@ -282,6 +312,9 @@
         background-size: cover;
         background-position: 0px 200px;
     }
+    .populaire-section-carte:hover {
+        transition: none;
+    }
     .populaire-section-carte-block-droit-texte-nom {
         margin-left: 0px;
         padding-left: 0px;
@@ -293,6 +326,9 @@
     .populaire-section-carte-block-droit-etoiles {
         margin-left: 0px;
         padding-left: 0px;
+    }
+    .populaire-section-carte:hover .etoile {
+        transition: none;
     }
 }
 
@@ -329,6 +365,12 @@
         transition: 0s;
         transform: none;
     }
+    .hebergement-section-carte:hover .hebergement-section-nomhebergement {
+        transition: none;
+    }
+    .hebergement-section-carte:hover .etoile {
+        transition: none;
+    }
     .hebergement-section-carte-blochaut {
         margin-right: 5px;
         margin-left: 5px;
@@ -360,7 +402,7 @@
         box-shadow: inset 0 0 2px #d3d3d3, 0 0 10px #d3d3d3;
     }
     .populaire-section-carte:hover {
-        transition: 0s;
+        transition: none;
         transform: none;
     }
     .hebergements-afficherplus {
@@ -430,6 +472,9 @@
         padding-top: 14px;
         font-size: 12px;
     }
+    .populaire-section-carte:hover .etoile {
+        transition: none;
+    }
 }
 
 
@@ -441,28 +486,6 @@
         width: 48%;
         padding-bottom: 30px;
     }
-    /*
-    .activites-conteneur-section-carte-simple-premiere {
-        background-position: 50% 40%;
-        background-size: 590px;
-    }
-    .activites-conteneur-section-carte-simple-seconde {
-        background-size: 600px;
-    }
-    .activites-conteneur-section-carte-double-gauche-haut {
-        background-position: 56% 52%;
-        background-size: 430px;
-        height: 150px;
-    }
-    .activites-conteneur-section-carte-double-gauche-bas {
-        background-position: 50% 48%;
-        height: 120px;
-    }
-    .activites-conteneur-section-carte-double-droite-bas {
-        background-position: 50% 44%;
-        height: 150px;
-    }
-    */
     .activites-conteneur-section-carte-simple-premiere {
         background-position: 50% 90%;
         background-size: 681px;
@@ -478,17 +501,23 @@
         margin-top: 373px;
     }
     .activites-conteneur-section-carte-double-gauche-haut {
-        background-size: 417px;
+        background-size: 430px;
     }
     .activites-conteneur-section-carte-double-gauche-bas {
-        background-size: 417px;
+        background-size: 430px;
     }
     .activites-conteneur-section-carte-double-droite-haut {
         background-position: 50% 16%;
-        background-size: 417px;
+        background-size: 430px;
     }
     .activites-conteneur-section-carte-double-droite-bas {
-        background-size: 418px;
+        background-size: 430px;
+    }
+    figure:hover {
+        transition: none;
+    }
+    figure:hover figcaption {
+        transition: none;
     }
 }
 
@@ -517,8 +546,10 @@
         background-size: cover!important;
     }
     figure:hover {
-        transition: 0s;
-        transform: none;
+        transition: none;
+    }
+    figure:hover figcaption {
+        transition: none;
     }
     .activites-conteneur-section-carte-simple-premiere {
         height: 210px;
@@ -561,6 +592,12 @@
 @media all and (min-width: 768px) and (max-width: 980px) {
     .findepage-section-titre {
         font-size: 15px;
+    }
+    .findepage-premiere-section {
+        margin-right: 25px;
+    }
+    .findepage-autre-section {
+        margin-right: 25px;
     }
 }
 
