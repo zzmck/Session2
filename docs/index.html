@@ -2,21 +2,27 @@
 <html lang="fr">
 
 <head>
+    <!--  ENCODAGE CARACTERE EN UTF-8  -->
     <meta charset="utf-8" />
-    <!--  VIEWPORT  Responsive sur la largeur d'ecran  -->
+    <!--  NORMALIZE du CSS local  -->
     <link rel="stylesheet" href="css/normalize.css" />
+    <!--  VIEWPORT  Responsive sur la largeur d'ecran et initialisation du zoom utilisateur à 1  -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!--  POLICE D ECRITURE : Raleway  -->
+    <!--  POLICE D ECRITURE LOCAL SI GOOGLE PERDS SES SERVICES-->
+    <link rel="stylesheet" href="css/raleway.css" />
+    <!--  POLICE D ECRITURE GOOGLE PRIORITAIRE SI ACCESSIBLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- CDN ICONES DU SITE -->
+    <!-- CDN ICONES DU SITE VIA FONTAWESOME-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <!--  CSS du site  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!--<link rel="stylesheet" href="./css/raleway.css" />-->
     <!--  TITRE  -->
     <title>Booky</title>
 </head>
@@ -94,16 +100,17 @@
             <!-- DEBUT SECTION HEBERGEMENT ET POPULAIRE -->
             <div class="conteneur">
                 <!-- SECTION HEBERGEMENT -->
-                <div id="lien-hebergement" class="hebergements">
+                <section id="lien-hebergement" class="hebergements">
                     <!-- TITRE -->
                     <h3 class="hebergements-titre">Hébergements à Marseille</h3>
 
                     <!-- LISTE HEBERGEMENTS -->
                     <div class="hebergement-section">
-                        <div class="hebergement-section-carte">
+                        <article class="hebergement-section-carte">
+                            <h4 hidden>Auberge de la Cannebière, Nuit à partir de 25€</h4>
                             <a href="#">
                                 <div class="hebergement-section-carte-blochaut">
-                                    <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" />
+                                    <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" />
                                 </div>
                                 <p class="hebergement-section-nomhebergement">Auberge La Cannebière</p>
                                 <p class="hebergement-section-prixhebergement">Nuit à partir de <span class="hebergement-section-prixhebergement-gras">25€</span></p>
@@ -115,8 +122,9 @@
                                     <i class="fa fa-star"></i>
                                 </p>
                             </a>
-                        </div>
-                        <div class="hebergement-section-carte">
+                        </article>
+                        <article class="hebergement-section-carte">
+                            <h4 hidden>Hôtel du port, Nuit à partir de 52€</h4>
                             <a href="#">
                                 <div class="hebergement-section-carte-blochaut">
                                     <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
@@ -131,8 +139,9 @@
                                     <i class="fa fa-star etoile"></i>
                                 </p>
                             </a>
-                        </div>
-                        <div class="hebergement-section-carte">
+                        </article>
+                        <article class="hebergement-section-carte">
+                            <h4 hidden>Hôtel Les mouettes, Nuit à partir de 76€</h4>
                             <a href="#">
                                 <div class="hebergement-section-carte-blochaut">
                                     <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" />
@@ -147,8 +156,9 @@
                                     <i class="fa fa-star"></i>
                                 </p>
                             </a>
-                        </div>
-                        <div class="hebergement-section-carte">
+                        </article>
+                        <article class="hebergement-section-carte">
+                            <h4 hidden>Hôtel de la mer, Nuit à partir de 46€</h4>
                             <a href="#">
                                 <div class="hebergement-section-carte-blochaut">
                                     <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
@@ -163,8 +173,9 @@
                                     <i class="fa fa-star"></i>
                                 </p>
                             </a>
-                        </div>
-                        <div class="hebergement-section-carte">
+                        </article>
+                        <article class="hebergement-section-carte">
+                            <h4 hidden>Auberge Le Panier, Nuit à partir de 23€</h4>
                             <a href="#">
                                 <div class="hebergement-section-carte-blochaut">
                                     <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
@@ -179,8 +190,9 @@
                                     <i class="fa fa-star"></i>
                                 </p>
                             </a>
-                        </div>
-                        <div class="hebergement-section-carte">
+                        </article>
+                        <article class="hebergement-section-carte">
+                            <h4 hidden>Hôtel chez Amina, Nuit à partir de 96€</h4>
                             <a href="#">
                                 <div class="hebergement-section-carte-blochaut">
                                     <img class="hebergement-section-carte-blochaut-image" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
@@ -195,127 +207,150 @@
                                     <i class="fa fa-star etoile"></i>
                                 </p>
                             </a>
-                        </div>
+                        </article>
                     </div>
                     <!-- AFFICHER PLUS -->
                     <p class="hebergements-afficherplus"><a class="hebergements-afficherplus-lien" href="#">Afficher plus</a></p>
-                </div>
+                </section>
                 <!-- FIN SECTION HEBERGEMENT -->
 
                 <!-- SECTION POPULAIRE -->
                 <aside class="populaire">
                     <!-- TITRE -->
-                    <h3 class="populaire-titre">
-                        <span class="populaire-titre-texte">Les plus populaires</span>
-                        <span><i class="fa fa-star populaire-titre-etoilenoire"></i></span>
-                    </h3>
-                    <!-- LOGEMENT POPULAIRE -->
-                    <div class="populaire-section">
-                        <!-- LOGEMENT HAUT -->
-                        <div class="populaire-section-carte">
-                            <a href="#">
-                                <div class="populaire-section-carte-block-gauche">
-                                    <img class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" />
-                                </div>
-                                <div class="populaire-section-carte-block-droit">
-                                    <div class="populaire-section-carte-block-droit-texte">
-                                        <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Le soleil du matin</p>
-                                        <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">128€</span></p>
+                    <section>
+                        <h3 class="populaire-titre">
+                            <span class="populaire-titre-texte">Les plus populaires</span>
+                            <span><i class="fa fa-star populaire-titre-etoilenoire"></i></span>
+                        </h3>
+                        <!-- LOGEMENT POPULAIRE -->
+                        <div class="populaire-section">
+                            <!-- LOGEMENT HAUT -->
+                            <article class="populaire-section-carte">
+                                <h4 hidden>Hôtel Le soleil du matin, Nuit à partir de 128€</h4>
+                                <a href="#">
+                                    <div class="populaire-section-carte-block-gauche">
+                                        <img class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" />
                                     </div>
-                                    <p class="populaire-section-carte-block-droit-etoiles">
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- LOGEMENT MILIEU -->
-                        <div class="populaire-section-carte">
-                            <a href="#">
-                                <div class="populaire-section-carte-block-gauche">
-                                    <img class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" />
-                                </div>
-                                <div class="populaire-section-carte-block-droit">
-                                    <div class="populaire-section-carte-block-droit-texte">
-                                        <p class="populaire-section-carte-block-droit-texte-nom">Au coeur de l'eau Chambres d'hôtes</p>
-                                        <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">71€</span></p>
+                                    <div class="populaire-section-carte-block-droit">
+                                        <div class="populaire-section-carte-block-droit-texte">
+                                            <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Le soleil du matin</p>
+                                            <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">128€</span></p>
+                                        </div>
+                                        <p class="populaire-section-carte-block-droit-etoiles">
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                        </p>
                                     </div>
-                                    <p class="populaire-section-carte-block-droit-etoiles">
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- LOGEMENT BAS -->
-                        <div class="populaire-section-carte">
-                            <a href="#">
-                                <div class="populaire-section-carte-block-gauche">
-                                    <img class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" />
-                                </div>
-                                <div class="populaire-section-carte-block-droit">
-                                    <div class="populaire-section-carte-block-droit-texte">
-                                        <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Tout bleu et Blanc</p>
-                                        <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">68€</span></p>
+                                </a>
+                            </article>
+                            <!-- LOGEMENT MILIEU -->
+                            <article class="populaire-section-carte">
+                                <h4 hidden>Au coeur de l'eau Chambres d'hôtes, Nuit à partir de 71€</h4>
+                                <a href="#">
+                                    <div class="populaire-section-carte-block-gauche">
+                                        <img class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" />
                                     </div>
-                                    <p class="populaire-section-carte-block-droit-etoiles">
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star etoile"></i>
-                                        <i class="fa fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
+                                    <div class="populaire-section-carte-block-droit">
+                                        <div class="populaire-section-carte-block-droit-texte">
+                                            <p class="populaire-section-carte-block-droit-texte-nom">Au coeur de l'eau Chambres d'hôtes</p>
+                                            <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">71€</span></p>
+                                        </div>
+                                        <p class="populaire-section-carte-block-droit-etoiles">
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+                            <!-- LOGEMENT BAS -->
+                            <article class="populaire-section-carte">
+                                <h4 hidden>Hôtel Tout bleu et Blanc, Nuit à partir de 68€</h4>
+                                <a href="#">
+                                    <div class="populaire-section-carte-block-gauche">
+                                        <img class="populaire-section-carte-block-gauche-image populaire-taille-image-haut" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" />
+                                    </div>
+                                    <div class="populaire-section-carte-block-droit">
+                                        <div class="populaire-section-carte-block-droit-texte">
+                                            <p class="populaire-section-carte-block-droit-texte-nom">Hôtel Tout bleu et Blanc</p>
+                                            <p class="populaire-section-carte-block-droit-texte-prix">Nuit à partir de <span class="populaire-section-carte-block-droit-texte-prix-gras">68€</span></p>
+                                        </div>
+                                        <p class="populaire-section-carte-block-droit-etoiles">
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star etoile"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
                         </div>
-                    </div>
+                    </section>
                 </aside>
                 <!-- FIN SECTION POPULAIRE -->
             </div>
             <!-- FIN SECTION HEBERGEMENT ET POPULAIRE -->
 
             <!-- DEBUT SECTION ACTIVITES -->
-            <div id="lien-activites" class="activites">
+            <section id="lien-activites" class="activites">
                 <!-- TITRE -->
                 <h3 class="activites-titre">Activités à Marseille</h3>
                 <!-- ACTIVITES -->
                 <div class="activites-conteneur">
-                    <div class="activites-conteneur-section">
-                        <figure class="activites-conteneur-section-carte-simple-premiere" style="background-image: url('./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg')">
-                            <figcaption class="activites-conteneur-section-carte-texte-grandeimage">Vieux Port</figcaption>
+                    <article class="activites-conteneur-article">
+                        <h4 hidden>Activités, Vieux port</h4>
+                        <figure class="taille-figure-large">
+                            <img class="activites-conteneur-article-carte" src='./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' alt="Vieux port" />
+                            <figcaption class="marge-figaction-large">Vieux Port</figcaption>
                         </figure>
+                    </article>
+                    <div class="activites-conteneur-double-article">
+                        <article>
+                            <h4 hidden>Activités, Fort de Pomègues</h4>
+                            <figure class="taille-figure-medium">
+                                <img class="activites-conteneur-article-carte" src='./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg' alt="Fort de Pomègues" />
+                                <figcaption class="marge-figaction-medium">Fort de Pomègues</figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <h4 hidden>Activités, Îles de Frioul</h4>
+                            <figure class="taille-figure-small">
+                                <img class="activites-conteneur-article-carte" src='./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' alt="Îles du Frioul" />
+                                <figcaption class="marge-figaction-small">Îles du Frioul</figcaption>
+                            </figure>
+                        </article>
                     </div>
-                    <div class="activites-conteneur-section">
-                        <figure class="activites-conteneur-section-carte-double-gauche-haut" style="background-image: url('./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg')">
-                            <figcaption class="activites-conteneur-section-carte-double-gauche-haut-texte">Fort de Pomègues</figcaption>
+                    <article class="activites-conteneur-article">
+                        <h4 hidden>Activités, Parc National des Calanques</h4>
+                        <figure class="taille-figure-large">
+                            <img class="activites-conteneur-article-carte eclaicissement" src='./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' alt="Parc National des Calanques" />
+                            <figcaption class="marge-figaction-large">Parc National des Calanques</figcaption>
                         </figure>
-                        <figure class="activites-conteneur-section-carte-double-gauche-bas" style="background-image: url('./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg')">
-                            <figcaption class="activites-conteneur-section-carte-double-gauche-bas-texte">Îles du Frioul</figcaption>
-                        </figure>
-                    </div>
-                    <div class="activites-conteneur-section">
-                        <figure class="activites-conteneur-section-carte-simple-seconde" style="background-image: url('./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg')">
-                            <figcaption class="activites-conteneur-section-carte-texte-grandeimage">Parc National des Calanques</figcaption>
-                        </figure>
-                    </div>
-                    <div class="activites-conteneur-section ">
-                        <figure class="activites-conteneur-section-carte-double-droite-haut" style="background-image: url('./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg')">
-                            <figcaption class="activites-conteneur-section-carte-double-droite-haut-texte">Notre-Dame-de-la-garde</figcaption>
-                        </figure>
-                        <figure class="activites-conteneur-section-carte-double-droite-bas" style="background-image: url('./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg')">
-                            <figcaption class="activites-conteneur-section-carte-double-droite-bas-texte">
-                                Parc Longchamp
-                            </figcaption>
-                        </figure>
+                    </article>
+                    <div class="activites-conteneur-double-article">
+                        <article>
+                            <h4 hidden>Activités, Notre-Dame-de-la-garde</h4>
+                            <figure class="taille-figure-small">
+                                <img class="activites-conteneur-article-carte" src='./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg' alt="Notre-Dame-de-la-garde" />
+                                <figcaption class="marge-figaction-small">Notre-Dame-de-la-garde</figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <h4 hidden>Activités, Parc Longchamp</h4>
+                            <figure class="taille-figure-medium">
+                                <img class="activites-conteneur-article-carte" src='./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt="Parc Longchamp" />
+                                <figcaption class="marge-figaction-medium">Parc Longchamp</figcaption>
+                            </figure>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- FIN SECTION ACTIVITES -->
         </main>
         <!-- FIN SECTION IMPORTANT MAIN -->
