@@ -555,6 +555,9 @@ main {
 
 /****************ACTIVITES****************/
 
+
+/****** Activités - Section *****/
+
 .activites {
     width: 100%;
     margin-bottom: 40px;
@@ -562,12 +565,18 @@ main {
     flex-direction: column;
 }
 
+
+/****** Activités - Titre H3 *****/
+
 .activites-titre {
     margin-left: 0px;
     padding-top: 40px;
     margin-bottom: 25px;
     font-size: 22px;
 }
+
+
+/****** Activités - Conteneur global *****/
 
 .activites-conteneur {
     display: inline-flex;
@@ -577,60 +586,66 @@ main {
     width: 100%;
 }
 
-.activites-conteneur-section {
-    display: flex;
-    flex-direction: column;
-    width: 23%;
+
+/****** Activités - Article simple *****/
+
+.activites-conteneur-article {
+    display: block;
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    width: 23%;
 }
 
-.activites-conteneur-section-carte {
-    height: auto;
-    margin-left: 0px;
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: inset 0 0 1px #b0b0b0, 0 0 7px#999999;
-}
 
-.activites-carte-simple {
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: none;
-    width: 100%;
-}
-
-.activites-carte-double {
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    justify-items: baseline;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: none;
-}
+/****** Activités - Article figure *****/
 
 figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    width: 100%;
     margin: 0px;
     border-radius: 20px;
     box-shadow: inset 0 0 1px #b0b0b0, 0 0 7px#999999;
 }
 
 figure:hover {
-    box-shadow: inset 0px 0px 6px #b0b0b0, 0px 5px 10px #999999;
+    box-shadow: inset 0 0 6px #b0b0b0, 0 0 20px #999999;
     cursor: pointer;
     transition: 1s;
     transform: scaleY(1.1) scaleX(1.1);
 }
 
+
+/****** Activités - Article figure simple *****/
+
+.taille-figure-large {
+    height: 460px;
+}
+
+
+/****** Activités - Article figure Images *****/
+
+.activites-conteneur-article-carte {
+    position: absolute;
+    object-fit: cover;
+    object-position: 52% 50%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/****** Activités - Article figure simple Images eclaircissement *****/
+
+.eclaicissement {
+    filter: brightness(1.3);
+}
+
+
+/****** Activités - Article figcaption *****/
+
 figcaption {
+    position: absolute;
     width: 100%;
     padding-left: 16px;
     font-weight: bold;
@@ -649,61 +664,49 @@ figure:hover figcaption {
     transition: 1s;
 }
 
-.activites-conteneur-section-carte-simple-premiere {
-    background-position: 50% 90%;
-    background-size: 681px;
-    height: 425px;
+
+/****** Activités - Article double *****/
+
+.activites-conteneur-double-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
 }
 
-.activites-conteneur-section-carte-simple-seconde {
-    background-position: 50% 90%;
-    background-size: 681px;
-    height: 425px;
-    filter: brightness(1.3);
+
+/****** Activités - Hauteur article taille médium *****/
+
+.taille-figure-medium {
+    height: 238px;
 }
 
-.activites-conteneur-section-carte-texte-grandeimage {
-    margin-top: 373px;
+
+/****** Activités - Marge article Texte taille large *****/
+
+.marge-figaction-large {
+    margin-top: 401px;
 }
 
-.activites-conteneur-section-carte-double-gauche-haut {
-    background-position: 50% 50%;
-    background-size: 312px;
-    height: 230px;
-}
 
-.activites-conteneur-section-carte-double-gauche-haut-texte {
+/****** Activités - Marge article Texte taille médium *****/
+
+.marge-figaction-medium {
     margin-top: 178px;
 }
 
-.activites-conteneur-section-carte-double-gauche-bas {
-    background-position: 50% 55%;
-    background-size: 312px;
-    height: 152px;
+
+/****** Activités - Hauteur article taille petite *****/
+
+.taille-figure-small {
+    height: 178px;
 }
 
-.activites-conteneur-section-carte-double-gauche-bas-texte {
-    margin-top: 102px;
-}
 
-.activites-conteneur-section-carte-double-droite-haut {
-    background-position: 50% 55%;
-    background-size: 312px;
-    height: 185px;
-}
+/****** Activités - Marge article Texte taille small *****/
 
-.activites-conteneur-section-carte-double-droite-haut-texte {
-    margin-top: 125px;
-}
-
-.activites-conteneur-section-carte-double-droite-bas {
-    background-position: 50% 50%;
-    background-size: 312px;
-    height: 200px;
-}
-
-.activites-conteneur-section-carte-double-droite-bas-texte {
-    margin-top: 140px;
+.marge-figaction-small {
+    margin-top: 118px;
 }
 
 

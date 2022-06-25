@@ -379,7 +379,6 @@
     .hebergement-section-carte-blochaut-image {
         width: 100%;
         height: 118px;
-        background-size: 344px;
         border-radius: 16px 16px 0px 0px;
         margin: 0px;
     }
@@ -443,15 +442,6 @@
         margin: 0px;
         margin-right: 10px;
     }
-    .populaire-taille-image-haut {
-        background-size: 211px;
-    }
-    .populaire-taille-image-milieu {
-        background-size: 190px;
-    }
-    .populaire-taille-image-bas {
-        background-size: 135px;
-    }
     .populaire-section-carte-block-droit-texte-nom {
         font-size: 18px;
         margin-top: 7px;
@@ -481,37 +471,14 @@
 /*            VUE ACTIVITES TABLETTE                */
 
 @media all and (min-width: 768px) and (max-width: 980px) {
-    .activites-conteneur-section {
+    .activites-conteneur-article {
         flex-direction: column;
         width: 48%;
         padding-bottom: 30px;
     }
-    .activites-conteneur-section-carte-simple-premiere {
-        background-position: 50% 90%;
-        background-size: 681px;
-        height: 425px;
-    }
-    .activites-conteneur-section-carte-simple-seconde {
-        background-position: 50% 90%;
-        background-size: 681px;
-        height: 425px;
-        filter: brightness(1.3);
-    }
-    .activites-conteneur-section-carte-texte-grandeimage {
-        margin-top: 373px;
-    }
-    .activites-conteneur-section-carte-double-gauche-haut {
-        background-size: 430px;
-    }
-    .activites-conteneur-section-carte-double-gauche-bas {
-        background-size: 430px;
-    }
-    .activites-conteneur-section-carte-double-droite-haut {
-        background-position: 50% 16%;
-        background-size: 430px;
-    }
-    .activites-conteneur-section-carte-double-droite-bas {
-        background-size: 430px;
+    .activites-conteneur-double-article {
+        padding-bottom: 30px;
+        width: 47%;
     }
     figure:hover {
         transition: none;
@@ -535,54 +502,43 @@
         flex-direction: column;
         align-items: center;
     }
-    .activites-conteneur-section {
+    .activites-conteneur-article {
         width: 87%;
-    }
-    .activites-conteneur-section-carte {
-        margin-bottom: 20px;
     }
     figure {
         margin-bottom: 44px;
         background-size: cover!important;
     }
     figure:hover {
+        transform: none;
         transition: none;
     }
     figure:hover figcaption {
         transition: none;
+        transform: none;
     }
-    .activites-conteneur-section-carte-simple-premiere {
-        height: 210px;
+    .activites-conteneur-double-article {
+        padding-bottom: 30px;
+        width: 87%;
+        padding-bottom: 0px;
     }
-    .activites-conteneur-section-carte-simple-seconde {
-        height: 210px;
+    .taille-figure-large {
+        height: 200px;
     }
-    .activites-conteneur-section-carte-texte-grandeimage {
-        margin-top: 150px;
+    .taille-figure-medium {
+        height: 200px;
     }
-    .activites-conteneur-section-carte-double-gauche-haut {
-        height: 210px;
+    .taille-figure-small {
+        height: 200px;
     }
-    .activites-conteneur-section-carte-double-gauche-haut-texte {
-        margin-top: 150px;
+    .marge-figaction-small {
+        margin-top: 140px;
     }
-    .activites-conteneur-section-carte-double-gauche-bas {
-        height: 210px;
+    .marge-figaction-medium {
+        margin-top: 140px;
     }
-    .activites-conteneur-section-carte-double-gauche-bas-texte {
-        margin-top: 150px;
-    }
-    .activites-conteneur-section-carte-double-droite-haut {
-        height: 210px;
-    }
-    .activites-conteneur-section-carte-double-droite-haut-texte {
-        margin-top: 150px;
-    }
-    .activites-conteneur-section-carte-double-droite-bas {
-        height: 210px;
-    }
-    .activites-conteneur-section-carte-double-droite-bas-texte {
-        margin-top: 150px;
+    .marge-figaction-large {
+        margin-top: 140px;
     }
 }
 
