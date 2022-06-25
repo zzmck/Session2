@@ -66,13 +66,13 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
                      
                      
 
-### Test sur Girhub en ligne :
+### Test sur Github en ligne :
 https://zzmck.github.io/Session2
 
 ### Rendu mobile :
 
 <p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_mobile.jpg"/>
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_mobiler.jpg"/>
 </p>
 
 ### Rendu desktop :
