@@ -84,7 +84,7 @@ https://zzmck.github.io/Session2
 ### W3C Validator CSS :
 
 <p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/css_validator.jpg"/>
+  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/css_validator_checked.jpg"/>
 </p>
 
 ### W3C Validator HTML :
