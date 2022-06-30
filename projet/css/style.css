@@ -69,7 +69,6 @@ main {
 .header-menu-block-liste-texte:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
-    transition: 0.5s;
 }
 
 
@@ -124,7 +123,7 @@ main {
     padding-bottom: 15px;
     padding-left: 16px;
     width: 200px;
-    outline: beige;
+    outline: #F2F2F2;
     color: black;
     font-size: 16px;
     font-weight: bold;
@@ -147,9 +146,8 @@ main {
 }
 
 .recherche-formulaire-bouton-bureau:hover {
-    background-color: #deebff;
+    background-color: #DEEBFF;
     color: #0065FC;
-    transition: 0.5s;
 }
 
 .recherche-formulaire-bouton-mobile {
@@ -166,9 +164,8 @@ main {
 }
 
 .recherche-formulaire-bouton-mobile:hover {
-    background-color: #deebff;
+    background-color: #DEEBFF;
     color: #0065FC;
-    transition: 0.5s;
 }
 
 
@@ -223,7 +220,7 @@ main {
 
 .filtre-container-ligne-bouton-icone {
     display: inline-block;
-    background-color: #deebff;
+    background-color: #DEEBFF;
     color: #0065FC;
     font-size: 16px;
     border-radius: 50%;
@@ -244,13 +241,11 @@ main {
 }
 
 .filtre-container-ligne-bouton:hover {
-    background-color: #256efe;
-    transition: 0.5s;
+    background-color: #0065FC;
 }
 
 .filtre-container-ligne-bouton:hover .filtre-container-ligne-bouton-texte {
     color: white;
-    transition: 0.5s;
 }
 
 .filtre-information {
@@ -259,7 +254,7 @@ main {
 }
 
 .filtre-information-icone {
-    color: #005fcc;
+    color: #0065FC;
     border-radius: 50%;
     width: 24px;
     height: 41px;
@@ -343,10 +338,8 @@ main {
 }
 
 .hebergement-section-carte:hover {
-    box-shadow: inset 0px 0px 6px #b0b0b0, 0px 5px 10px #999999;
+    box-shadow: inset 0 0 6px #b0b0b0, 0 0 20px #999999;
     cursor: pointer;
-    transition: 1s;
-    transform: scaleY(1.1) scaleX(1.1);
 }
 
 .hebergement-section-carte>a {
@@ -378,7 +371,6 @@ main {
 }
 
 .hebergement-section-carte:hover .hebergement-section-nomhebergement {
-    transition: 1s;
     color: #0065FC;
 }
 
@@ -404,7 +396,6 @@ main {
 
 .hebergement-section-carte:hover .etoile {
     color: rgba(255, 208, 0, 0.949);
-    transition: 0.2s;
 }
 
 .hebergements-afficherplus-lien {
@@ -456,7 +447,7 @@ main {
 }
 
 .populaire-section-carte {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -468,8 +459,6 @@ main {
 .populaire-section-carte:hover {
     box-shadow: inset 0 0 6px #b0b0b0, 0 0 20px #999999;
     cursor: pointer;
-    transition: 1s;
-    transform: scaleY(1.1) scaleX(1.1);
 }
 
 .populaire-section-carte>a {
@@ -533,7 +522,6 @@ main {
 
 .populaire-section-carte:hover .etoile {
     color: rgba(255, 208, 0, 0.949);
-    transition: 0.2s;
 }
 
 
@@ -611,8 +599,6 @@ figure {
 figure:hover {
     box-shadow: inset 0 0 6px #b0b0b0, 0 0 20px #999999;
     cursor: pointer;
-    transition: 1s;
-    transform: scaleY(1.1) scaleX(1.1);
 }
 
 
@@ -661,7 +647,6 @@ figcaption {
 
 figure:hover figcaption {
     color: #0065FC;
-    transition: 1s;
 }
 
 
