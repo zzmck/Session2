@@ -11,11 +11,7 @@
 
 /*            VUE TABLETTE HEADER                */
 
-@media all and (min-width: 768px) and (max-width: 992px) {
-    .header-menu-block-liste-texte:hover {
-        transition: none;
-    }
-}
+@media all and (min-width: 768px) and (max-width: 992px) {}
 
 
 /*            VUE MOBILE HEADER                 */
@@ -84,9 +80,6 @@
         border-top: none;
         color: #0065FC;
     }
-    .header-menu-block-liste-texte:hover {
-        transition: none;
-    }
 }
 
 
@@ -128,9 +121,6 @@
     }
     .recherche-formulaire-bouton-mobile {
         display: block;
-    }
-    .recherche-formulaire-bouton-mobile:hover {
-        transition: none;
     }
 }
 
@@ -177,22 +167,12 @@
     .recherche-formulaire-bouton-mobile {
         display: block;
     }
-    .recherche-formulaire-bouton-mobile:hover {
-        transition: none;
-    }
 }
 
 
 /*            VUE FILTRE TABLETTE                */
 
-@media all and (min-width: 768px) and (max-width: 1100px) {
-    .filtre-container-ligne-bouton:hover {
-        transition: none;
-    }
-    .filtre-container-ligne-bouton:hover .filtre-container-ligne-bouton-texte {
-        transition: none;
-    }
-}
+@media all and (min-width: 768px) and (max-width: 1100px) {}
 
 
 /*           VUE FILTRE MOBILE            */
@@ -221,12 +201,6 @@
         padding-right: 25px;
         height: 55px;
         margin-right: 0px;
-    }
-    .filtre-container-ligne-bouton:hover {
-        transition: none;
-    }
-    .filtre-container-ligne-bouton:hover .filtre-container-ligne-bouton-texte {
-        transition: none;
     }
     .filtre-container-ligne-bouton-icone {
         font-size: 19px;
@@ -272,17 +246,6 @@
         width: 43%;
         box-shadow: inset 0 0 1px #b0b0b0, 0 0 7px#999999;
     }
-    .hebergement-section-carte:hover {
-        width: 45%;
-        box-shadow: inset 0 0 1px #b0b0b0, 0 0 7px#999999;
-        transition: none;
-    }
-    .hebergement-section-carte:hover .hebergement-section-nomhebergement {
-        transition: none;
-    }
-    .hebergement-section-carte:hover .etoile {
-        transition: none;
-    }
     .hebergement-section-carte-blochaut-image {
         height: 118px;
         background-size: 344px;
@@ -298,10 +261,6 @@
         margin-top: 30px;
         margin-right: 50px;
     }
-    .populaire-section-carte-block-gauche-image {
-        width: 82%;
-        height: 100%;
-    }
     .populaire-taille-image-haut {
         background-size: cover;
     }
@@ -312,8 +271,10 @@
         background-size: cover;
         background-position: 0px 200px;
     }
-    .populaire-section-carte:hover {
-        transition: none;
+    .populaire-section-carte-block-gauche {
+        width: 40%;
+        height: 150px;
+        margin-right: 10px;
     }
     .populaire-section-carte-block-droit-texte-nom {
         margin-left: 0px;
@@ -326,9 +287,6 @@
     .populaire-section-carte-block-droit-etoiles {
         margin-left: 0px;
         padding-left: 0px;
-    }
-    .populaire-section-carte:hover .etoile {
-        transition: none;
     }
 }
 
@@ -360,17 +318,6 @@
         width: 90%;
         box-shadow: inset 0 0 2px #d3d3d3, 0 0 10px #d3d3d3;
     }
-    .hebergement-section-carte:hover {
-        width: 92%;
-        transition: 0s;
-        transform: none;
-    }
-    .hebergement-section-carte:hover .hebergement-section-nomhebergement {
-        transition: none;
-    }
-    .hebergement-section-carte:hover .etoile {
-        transition: none;
-    }
     .hebergement-section-carte-blochaut {
         margin-right: 5px;
         margin-left: 5px;
@@ -399,10 +346,6 @@
         padding-bottom: 0px;
         margin-bottom: 10px;
         box-shadow: inset 0 0 2px #d3d3d3, 0 0 10px #d3d3d3;
-    }
-    .populaire-section-carte:hover {
-        transition: none;
-        transform: none;
     }
     .hebergements-afficherplus {
         margin: 0;
@@ -462,9 +405,6 @@
         padding-top: 14px;
         font-size: 12px;
     }
-    .populaire-section-carte:hover .etoile {
-        transition: none;
-    }
 }
 
 
@@ -479,12 +419,6 @@
     .activites-conteneur-double-article {
         padding-bottom: 30px;
         width: 47%;
-    }
-    figure:hover {
-        transition: none;
-    }
-    figure:hover figcaption {
-        transition: none;
     }
 }
 
@@ -508,14 +442,6 @@
     figure {
         margin-bottom: 44px;
         background-size: cover!important;
-    }
-    figure:hover {
-        transform: none;
-        transition: none;
-    }
-    figure:hover figcaption {
-        transition: none;
-        transform: none;
     }
     .activites-conteneur-double-article {
         padding-bottom: 30px;
