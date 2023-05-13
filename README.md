@@ -2,9 +2,6 @@
 
 ## Transformez une maquette en site web avec HTML & CSS.
 
-
-## Vue des objectifs version bureau et mobile
-
 <p align="center">
   <img align="center" width="50%" alt="projet mobile" src="https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png"/>
 </p>
