@@ -5,16 +5,8 @@
 
 ## Vue des objectifs version bureau et mobile
 
-### Version Bureau :
-
 <p align="center">
-  <img align="center" width="90%" alt="projet desktop" src="https://serveursbot.net/projet2/GIT/loupe_desktop.jpg"/>
-</p>
-
-### Version Mobile :
-
-<p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/GIT/loupe_mobile.jpg"/>
+  <img align="center" width="50%" alt="projet mobile" src="https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png"/>
 </p>
 
 
@@ -69,23 +61,6 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
 ### Test sur Github en ligne :
 https://zzmck.github.io/Session2
 
-### Rendu mobile :
-
-<p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_mobile.jpg"/>
-</p>
-
-### Rendu desktop :
-
-<p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/rendu_desktop.jpg"/>
-</p>
-
-### W3C Validator CSS :
-
-<p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/css_validator_checked.jpg"/>
-</p>
 
 ### W3C Validator HTML :
 
