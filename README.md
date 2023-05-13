@@ -58,13 +58,6 @@ Je me suis orienter directement sur les FlexBoxs en pensant quel blocs sera cont
 ### Test sur Github en ligne :
 https://zzmck.github.io/Session2
 
-
-### W3C Validator HTML :
-
-<p align="center">
-  <img align="center" width="50%" alt="projet mobile" src="https://serveursbot.net/projet2/images/html_validator.jpg"/>
-</p>
-
 **Merci de suivre mon projet**
 
 **Mickael**
